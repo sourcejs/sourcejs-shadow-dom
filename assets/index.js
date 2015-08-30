@@ -9,12 +9,13 @@ require([
      * @Object default module option values
      */
     var defaults = {
+        enabled: true
     };
 
     /**
      * @constructor
      *
-     * @param [Object] config - auth inline configuration set of options
+     * @param {Object} config - auth inline configuration set of options
      */
     function ShadowDom(config) {
         var _this = this;
@@ -27,9 +28,11 @@ require([
             globalConfig
         );
 
-        $(function() {
-            _this.init();
-        });
+        if (this.conf.enabled) {
+            $(function() {
+                _this.init();
+            });
+        }
     }
 
     ShadowDom.prototype = Module.createInstance();
