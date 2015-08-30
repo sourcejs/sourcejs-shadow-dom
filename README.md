@@ -14,6 +14,8 @@ To install middleware, run npm command in `sourcejs/user` folder:
 npm install sourcejs-shadow-dom --save
 ```
 
+Then run `npm run build` in SourceJS core folder to auto-update client-side modules settings.
+
 After restarting SourceJS app, middleware will be loaded automatically. To disable it, remove npm module and restart the app.
 
 ## How it Works
