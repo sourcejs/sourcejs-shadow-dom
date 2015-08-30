@@ -1,6 +1,6 @@
 {
   "name": "sourcejs-shadow-dom",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Experimental implementation of Shadow DOM for spec examples in SourceJS.",
   "dependencies": {
     "cheerio": "^0.19.0"
